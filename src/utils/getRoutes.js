@@ -67,7 +67,6 @@ const getData = (callback) => {
                 callback(error, undefined)
             } finally {
                 Mongoose.connection.close()
-                console.log(e)
             }
 
         })
