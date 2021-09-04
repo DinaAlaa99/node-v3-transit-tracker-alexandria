@@ -2,7 +2,7 @@ const request = require('request')
 const chalk = require('chalk')
 
 const travelTime = (origin, destination, callback) => {
-    url = `https://maps.googleapis.com/maps/api/distancematrix/json?&origins=${origin.latitude},${origin.longitude}&destinations=${destination.latitude},${destination.longitude}&mode=driving&key=AIzaSyDnNvDFPC-zgjggGXYNoQR3yyZ-92UZ4LM`
+    url = `https://maps.googleapis.com/maps/api/distancematrix/json?&origins=${origin.latitude},${origin.longitude}&destinations=${destination.latitude},${destination.longitude}&mode=driving&key=MYKEY`
 
     request({ url, json: true }, (error, response) => {
         if (error) {
