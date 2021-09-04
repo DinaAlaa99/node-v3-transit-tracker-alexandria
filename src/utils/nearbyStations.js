@@ -6,7 +6,7 @@ const nearestStation = (latitude, longitude, stations, mode, callback) => {
     stations.forEach((station) => destinations += station.latitude + ',' + station.longitude + '|')
     destinations = destinations.slice(0, -1)
 
-    url = `https://maps.googleapis.com/maps/api/distancematrix/json?&origins=${latitude},${longitude}&destinations=${destinations}&mode=${mode}&key=AIzaSyDnNvDFPC-zgjggGXYNoQR3yyZ-92UZ4LM`
+    url = `https://maps.googleapis.com/maps/api/distancematrix/json?&origins=${latitude},${longitude}&destinations=${destinations}&mode=${mode}&key=MYKEY`
 
     request({ url, json: true }, (error, response) => {
         if (error) {
