@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const mongoPath = "mongodb+srv://GraduationProject:GraduationProject1234@PublicTransitTracker.p6tjd.mongodb.net/PublicTransitTracker?retryWrites=true&w=majority";
+const mongoPath = "mongodb+srv://USERNAME:PASSWORD@CLUStERNAME.p6tjd.mongodb.net/CLUSTERNAME?retryWrites=true&w=majority";
 
 module.exports = async() =>{
     await mongoose.connect(mongoPath,{
